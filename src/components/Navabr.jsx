@@ -10,9 +10,9 @@ import { authClient } from '@/lib/auth-client';
 
 const Navabr = () => {
 
-    const { data: session } = authClient.useSession();
+    const { data: session,isPending } = authClient.useSession();
     const user=session?.user;
-    console.log(user.name)
+    
     const pathName = usePathname();
 
      const NavLinks = (path, menuName) => (
@@ -48,8 +48,11 @@ const Navabr = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <h2>Hello,{user.name}</h2>
-                    <a className="btn btn-outline text-purple-500">Logout</a>;
+                    {isPending? <span className="loading loading-dots loading-xl"></span>: user?<div className='flex gap-1 items-center'>
+                        <h2 className='font-semibold'>Hello,{user.name}</h2>
+                    <button onClick={async ()=>await authClient.signOut()} className="btn btn-outline text-purple-500">Logout</button>
+                    </div>:
+                    <Link className="btn btn-outline text-purple-500" href={"/login"}>LogIn</Link>}
                 </div>
             </div>
         </div>
