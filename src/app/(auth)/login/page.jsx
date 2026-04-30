@@ -6,15 +6,31 @@ import img from '@/assets/loginLogo.png'
 import { FcGoogle } from 'react-icons/fc';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
+import { authClient } from '@/lib/auth-client';
+import { toast } from 'react-toastify';
 
 
 
 
 const LoginPage = () => {
 
-    const {register,handleSubmit}=useForm();
-    const handleLoginFunction=(data)=>{
-        console.log(data)
+    const { register, handleSubmit } = useForm();
+    const handleLoginFunction =async (data) => {
+        const { name, photo, email, password } = (data)
+
+        const { data: res, error } = await authClient.signIn.email({
+           
+            email: email, // required
+            password: password, // required
+            callbackURL: "/"
+        })
+        if (error) {
+            toast.error(error.message)
+        }
+        if (res) {
+            toast.success("Login successfull")
+            // router.push("/login")
+        }
     }
     return (
         <div className=' min-h-screen flex items-center justify-center rounded-xl'>
@@ -29,15 +45,15 @@ const LoginPage = () => {
                         <input type="email" {...register("email")} className="input rounded-xl" placeholder="Email" />
 
                         <label className="label">Password</label>
-                        <input type="password" {...register("password",{required:true})} className="input rounded-xl" placeholder="Password" />
+                        <input type="password" {...register("password", { required: true })} className="input rounded-xl" placeholder="Password" />
 
                         <button className="btn bg-purple-500 text-white mt-4">Login</button>
 
-                          <div className="divider">OR</div>
+                        <div className="divider">OR</div>
 
-                          <button className='bg-white  py-2 w-full rounded-xl flex items-center gap-4 justify-center text-xl'><FcGoogle />Login With Google</button>
+                        <button className='bg-white  py-2 w-full rounded-xl flex items-center gap-4 justify-center text-xl'><FcGoogle />Login With Google</button>
 
-                          <p className='text-center'>Don't have an account? <Link className='text-purple-500' href={"/register"}>Register</Link></p>
+                        <p className='text-center'>Don't have an account? <Link className='text-purple-500' href={"/register"}>Register</Link></p>
 
                     </form>
                 </div>

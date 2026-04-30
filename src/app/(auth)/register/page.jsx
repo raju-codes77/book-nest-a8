@@ -6,15 +6,35 @@ import img from '@/assets/loginLogo.png'
 import { FcGoogle } from 'react-icons/fc';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
+import { authClient } from '@/lib/auth-client';
+import { toast } from 'react-toastify';
+import { useRouter } from 'next/navigation';
+
 
 
 
 
 const LoginPage = () => {
+    const router=useRouter();
 
-    const {register,handleSubmit}=useForm();
-    const handleRegFunction=(data)=>{
-        console.log(data)
+    const { register, handleSubmit } = useForm();
+    const handleRegFunction = async (data) => {
+        const {name,photo,email,password}=(data)
+
+        const { data:res, error } = await authClient.signUp.email({
+            name: name, // required
+            email: email, // required
+            password:password, // required
+            image: photo,
+            callbackURL: "/login"
+        })
+        if(error){
+             toast.error(error.message)
+        }
+        if(res){
+            toast.success("Registration successfully completed")
+            router.push("/login")
+        }
     }
     return (
         <div className=' min-h-screen flex items-center justify-center rounded-xl'>
@@ -35,15 +55,15 @@ const LoginPage = () => {
                         <input type="email" {...register("email")} className="input rounded-xl" placeholder="Email" />
 
                         <label className="label">Password</label>
-                        <input type="password" {...register("password",{required:true})} className="input rounded-xl" placeholder="Password" />
+                        <input type="password" {...register("password", { required: true })} className="input rounded-xl" placeholder="Password" />
 
                         <button className="btn bg-purple-500 text-white mt-4">Register</button>
 
-                          <div className="divider">OR</div>
+                        <div className="divider">OR</div>
 
-                          
 
-                          <p className='text-center'> Have an account? <Link className='text-purple-500' href={"/login"}>Login</Link></p>
+
+                        <p className='text-center'> Have an account? <Link className='text-purple-500' href={"/login"}>Login</Link></p>
 
                     </form>
                 </div>

@@ -6,9 +6,13 @@ import React from 'react';
 import logo from "@/assets/logoo.png"
 import { MdMenuBook } from 'react-icons/md';
 import { usePathname } from 'next/navigation';
+import { authClient } from '@/lib/auth-client';
 
 const Navabr = () => {
 
+    const { data: session } = authClient.useSession();
+    const user=session?.user;
+    console.log(user.name)
     const pathName = usePathname();
 
      const NavLinks = (path, menuName) => (
@@ -44,6 +48,7 @@ const Navabr = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
+                    <h2>Hello,{user.name}</h2>
                     <a className="btn btn-outline text-purple-500">Logout</a>;
                 </div>
             </div>
