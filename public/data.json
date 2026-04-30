@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "description": "A story of ambition and love set in the Roaring Twenties.",
+    "category": "Story",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/id/14589083-L.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "A handbook of agile software craftsmanship.",
+    "category": "Tech",
+    "available_quantity": 12,
+    "image_url": "https://covers.openlibrary.org/b/id/14605917-L.jpg"
+  },
+  {
+    "id": 3,
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "An exploration of cosmology from the Big Bang to black holes.",
+    "category": "Science",
+    "available_quantity": 8,
+    "image_url": "https://covers.openlibrary.org/b/id/12836261-L.jpg"
+  },
+  {
+    "id": 4,
+    "title": "1984",
+    "author": "George Orwell",
+    "description": "A dystopian social science fiction novel.",
+    "category": "Story",
+    "available_quantity": 15,
+    "image_url": "https://covers.openlibrary.org/b/id/14510007-L.jpg"
+  },
+  {
+    "id": 5,
+    "title": "The Pragmatic Programmer",
+    "author": "Andrew Hunt",
+    "description": "A guide for software developers to improve their craft.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/id/10398065-L.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Cosmos",
+    "author": "Carl Sagan",
+    "description": "The evolution of the universe and human knowledge.",
+    "category": "Science",
+    "available_quantity": 10,
+    "image_url": "https://covers.openlibrary.org/b/id/9269962-L.jpg"
+  },
+  {
+    "id": 7,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "description": "A story about teenage angst and alienation.",
+    "category": "Story",
+    "available_quantity": 4,
+    "image_url": "https://covers.openlibrary.org/b/id/12918381-L.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Introduction to Algorithms",
+    "author": "Thomas H. Cormen",
+    "description": "The definitive guide to computer algorithms.",
+    "category": "Tech",
+    "available_quantity": 3,
+    "image_url": "https://covers.openlibrary.org/b/id/13155829-L.jpg"
+  },
+  {
+    "id": 9,
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "description": "A landmark book on the gene-centered view of evolution.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/id/11181287-L.jpg"
+  },
+  {
+    "id": 10,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "description": "A novel about racial injustice and the loss of innocence.",
+    "category": "Story",
+    "available_quantity": 9,
+    "image_url": "https://covers.openlibrary.org/b/id/14555813-L.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Eloquent JavaScript",
+    "author": "Marijn Haverbeke",
+    "description": "A modern introduction to programming with JavaScript.",
+    "category": "Tech",
+    "available_quantity": 20,
+    "image_url": "https://covers.openlibrary.org/b/id/14603953-L.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "description": "A brief history of humankind.",
+    "category": "Science",
+    "available_quantity": 14,
+    "image_url": "https://covers.openlibrary.org/b/id/14550882-L.jpg"
+  }
+]

@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "description": "A guide to building good habits and breaking bad ones.",
+    "category": "Tech",
+    "available_quantity": 8,
+    "image_url": "https://covers.openlibrary.org/b/title/Atomic%20Habits-L.jpg"
+  },
+ {
+    "id": 2,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image_url": "https://i.ibb.co.com/0cv102J/To-Kill-a-Mockingbird.webp",
+    "description": "'The Great Gatsby' by F. Scott Fitzgerald is a timeless masterpiece that delves into the decadence and disillusionment of the Jazz Age. Set in the Roaring Twenties, the novel unveils the enigmatic Jay Gatsby's extravagant parties, masking a pursuit of lost love. Narrated by Nick Carraway, the story explores themes of wealth, love, and the American Dream, drawing readers into a vivid portrayal of the glittering yet elusive world of the East and West Egg. Fitzgerald's prose is both poetic and haunting, weaving a compelling narrative that transcends its era. A poignant exploration of societal excess and the human condition, 'The Great Gatsby' remains a literary gem that resonates across generations.",
+    "available_quantity": 2,
+    "category": "story"
+  },
+  {
+    "id": 3,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "description": "Best practices for writing clean and maintainable code.",
+    "category": "Tech",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/title/Clean%20Code-L.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "description": "Rules for focused success in a distracted world.",
+    "category": "Tech",
+    "available_quantity": 7,
+    "image_url": "https://covers.openlibrary.org/b/title/Deep%20Work-L.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Ikigai",
+    "author": "Héctor García",
+    "description": "The Japanese secret to a long and happy life.",
+    "category": "Story",
+    "available_quantity": 9,
+    "image_url": "https://covers.openlibrary.org/b/title/Ikigai-L.jpg"
+  },
+  {
+    "id": 6,
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "description": "Timeless lessons on wealth, greed, and happiness.",
+    "category": "Tech",
+    "available_quantity": 5,
+    "image_url": "https://covers.openlibrary.org/b/title/The%20Psychology%20of%20Money-L.jpg"
+  },
+    {
+    "id": 7,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "image_url": "https://i.ibb.co.com/989qMRW/42844155.jpg",
+    "description": "'The Great Gatsby' by F. Scott Fitzgerald is a timeless masterpiece that delves into the decadence and disillusionment of the Jazz Age. Set in the Roaring Twenties, the novel unveils the enigmatic Jay Gatsby's extravagant parties, masking a pursuit of lost love. Narrated by Nick Carraway, the story explores themes of wealth, love, and the American Dream, drawing readers into a vivid portrayal of the glittering yet elusive world of the East and West Egg. Fitzgerald's prose is both poetic and haunting, weaving a compelling narrative that transcends its era. A poignant exploration of societal excess and the human condition, 'The Great Gatsby' remains a literary gem that resonates across generations.",
+    "category": "story",
+    "available_quantity": 9
+  },
+  {
+    "id": 8,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "image_url": "https://i.ibb.co.com/zS9jsdK/18144590.jpg",
+    "description": "'The Great Gatsby' by F. Scott Fitzgerald is a timeless masterpiece that delves into the decadence and disillusionment of the Jazz Age. Set in the Roaring Twenties, the novel unveils the enigmatic Jay Gatsby's extravagant parties, masking a pursuit of lost love. Narrated by Nick Carraway, the story explores themes of wealth, love, and the American Dream, drawing readers into a vivid portrayal of the glittering yet elusive world of the East and West Egg. Fitzgerald's prose is both poetic and haunting, weaving a compelling narrative that transcends its era. A poignant exploration of societal excess and the human condition, 'The Great Gatsby' remains a literary gem that resonates across generations.",
+    "available_quantity": 17,
+    "category": "Fiction"
+  },
+  {
+    "id": 9,
+    "title": "A Brief History of Time",
+    "author": "Stephen Hawking",
+    "description": "Understanding the universe and time.",
+    "category": "Science",
+    "available_quantity": 6,
+    "image_url": "https://covers.openlibrary.org/b/title/A%20Brief%20History%20of%20Time-L.jpg"
+  },
+  {
+    "id": 10,
+    "title": "The Selfish Gene",
+    "author": "Richard Dawkins",
+    "description": "A gene-centered view of evolution.",
+    "category": "Science",
+    "available_quantity": 3,
+    "image_url": "https://covers.openlibrary.org/b/title/The%20Selfish%20Gene-L.jpg"
+  },
+   {
+    "id": 11,
+    "title": "The Girl on the Train",
+    "author": "Paula Hawkins",
+    "image_url": "https://i.ibb.co.com/P6hfCmJ/Whats-App-Image-2024-05-22-at-11-21-25-2e21ae46.jpg",
+    "description": "'The Great Gatsby' by F. Scott Fitzgerald is a timeless masterpiece that delves into the decadence and disillusionment of the Jazz Age. Set in the Roaring Twenties, the novel unveils the enigmatic Jay Gatsby's extravagant parties, masking a pursuit of lost love. Narrated by Nick Carraway, the story explores themes of wealth, love, and the American Dream, drawing readers into a vivid portrayal of the glittering yet elusive world of the East and West Egg. Fitzgerald's prose is both poetic and haunting, weaving a compelling narrative that transcends its era. A poignant exploration of societal excess and the human condition, 'The Great Gatsby' remains a literary gem that resonates across generations.",
+    "available_quantity": 16,
+    "rating": 4.2,
+    "category": "Mystery"
+  },
+  {
+    "id": 12,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "description": "A young wizard’s magical journey begins.",
+    "category": "Story",
+    "available_quantity": 15,
+    "image_url": "https://covers.openlibrary.org/b/title/Harry%20Potter%20and%20the%20Sorcerer%27s%20Stone-L.jpg"
+  }
+]
