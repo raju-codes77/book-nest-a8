@@ -19,8 +19,9 @@ const BookDetails = () => {
 
     useEffect(() => {
         if (!user && !isPending) {
-            toast.error("You must be Login to see Book Details");
+            
             router.push("/login");
+            toast.error("You must be Login to see Book Details");
 
         }
     }, [user, isPending, router]);

@@ -29,7 +29,7 @@ const LoginPage = () => {
             callbackURL: "/login"
         })
         if(error){
-             toast.error(error.message)
+             toast.error(error.message);
         }
         if(res){
             toast.success("Registration successfully completed")

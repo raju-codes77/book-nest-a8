@@ -36,7 +36,7 @@ const AllBooks = () => {
                     <input onChange={(e)=>setSearch(e.target.value)} type="search" required placeholder="Search" />
                 </label>
 
-                <button className='btn btn-outline text-purple-400'>Search</button>
+                {/* <button className='btn btn-outline text-purple-400'>Search</button> */}
             </div>
             <h2 className='font-bold text-2xl mt-3'>All Books</h2>
             <div className='grid grid-cols-12 mt-5'>
