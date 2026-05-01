@@ -10,7 +10,7 @@ const AllBooks = () => {
     const [category,setCategory]=useState("All");
     const [search,setSearch]=useState("");
 
-    const filteredBooks=book.filter(book=>{
+    const filteredBooks=books.filter(book=>{
         const matchCategory= category === "All" || book.category===category;
         const searchCategory=book.title.toLowerCase().includes(search.toLowerCase());
 
@@ -52,7 +52,7 @@ const AllBooks = () => {
                 </div>
                 <div className='col-span-8 grid  sm:grid-cols-2 md:grid-cols-2 gap-4'>
                     {
-                        filteredBooks.map(book=><BooksCard key={book.id} book={book}></BooksCard>)
+                        filteredBooks.length>0?filteredBooks.map(book=><BooksCard key={book.id} book={book}></BooksCard>):<p className='font-semibold text-purple-500'>No Books Found</p>
                     }
                 </div>
 
