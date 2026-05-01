@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 
@@ -13,12 +14,11 @@ const BooksCard = ({ book }) => {
                 </figure>
                 <div className="card-body items-center ">
                     <h2 className="card-title">{book.title}</h2>
-                    <div className='flex justify-between'>
-                        <h2>{book.author}</h2>
-                        <h2>{book.category}</h2>
-                    </div>
+                    
+                        <p>{book.author}</p>
+                        
                     <div className="card-actions">
-                        <button  className="btn btn-primary">View Details</button>
+                        <Link href={`/details/${book.id}`}  className="btn btn-primary">View Details</Link>
                     </div>
                 </div>
             </div>

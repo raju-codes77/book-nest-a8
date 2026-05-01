@@ -3,17 +3,17 @@
     "id": 1,
     "title": "Atomic Habits",
     "author": "James Clear",
-    "description": "A guide to building good habits and breaking bad ones.",
+    "description": "A guide to building good habits and breaking bad ones. This book explores how small, consistent changes can lead to remarkable results over time. James Clear explains the science of habit formation and provides practical strategies to design systems that make success inevitable. It emphasizes identity-based habits, environment design, and continuous improvement for long-term growth.",
     "category": "tech",
     "available_quantity": 8,
     "image_url": "https://covers.openlibrary.org/b/title/Atomic%20Habits-L.jpg"
   },
- {
+  {
     "id": 2,
     "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "image_url": "https://i.ibb.co.com/0cv102J/To-Kill-a-Mockingbird.webp",
-    "description": "'The Great Gatsby' by F. Scott Fitzgerald is a timeless masterpiece that delves into the decadence and disillusionment of the Jazz Age. Set in the Roaring Twenties, the novel unveils the enigmatic Jay Gatsby's extravagant parties, masking a pursuit of lost love. Narrated by Nick Carraway, the story explores themes of wealth, love, and the American Dream, drawing readers into a vivid portrayal of the glittering yet elusive world of the East and West Egg. Fitzgerald's prose is both poetic and haunting, weaving a compelling narrative that transcends its era. A poignant exploration of societal excess and the human condition, 'The Great Gatsby' remains a literary gem that resonates across generations.",
+    "description": "A powerful story set in the American South that explores racial injustice, morality, and compassion through the eyes of a young girl named Scout. The novel highlights the courage of her father, Atticus Finch, who defends an innocent man in a deeply prejudiced society. It beautifully portrays human empathy, social inequality, and the loss of innocence in a changing world.",
     "available_quantity": 2,
     "category": "story"
   },
@@ -21,7 +21,7 @@
     "id": 3,
     "title": "Clean Code",
     "author": "Robert C. Martin",
-    "description": "Best practices for writing clean and maintainable code.",
+    "description": "Best practices for writing clean and maintainable code. This book teaches developers how to write code that is easy to read, understand, and extend. It covers principles, patterns, and practices that improve code quality and reduce bugs. Through real-world examples, it emphasizes simplicity, clarity, and discipline in software development.",
     "category": "tech",
     "available_quantity": 6,
     "image_url": "https://covers.openlibrary.org/b/title/Clean%20Code-L.jpg"
@@ -30,7 +30,7 @@
     "id": 4,
     "title": "Deep Work",
     "author": "Cal Newport",
-    "description": "Rules for focused success in a distracted world.",
+    "description": "Rules for focused success in a distracted world. This book explains how deep, distraction-free work is becoming increasingly valuable in today’s digital age. It provides strategies to improve concentration, eliminate shallow work, and produce high-quality results. The author highlights how mastering deep work can lead to greater productivity and meaningful achievements.",
     "category": "tech",
     "available_quantity": 7,
     "image_url": "https://covers.openlibrary.org/b/title/Deep%20Work-L.jpg"
@@ -39,7 +39,7 @@
     "id": 5,
     "title": "Ikigai",
     "author": "Héctor García",
-    "description": "The Japanese secret to a long and happy life.",
+    "description": "The Japanese secret to a long and happy life. This book explores the concept of finding purpose and meaning through what you love, what you are good at, and what the world needs. Inspired by the longevity of Okinawa residents, it offers insights into living a balanced, mindful, and fulfilling life.",
     "category": "story",
     "available_quantity": 9,
     "image_url": "https://covers.openlibrary.org/b/title/Ikigai-L.jpg"
@@ -48,17 +48,17 @@
     "id": 6,
     "title": "The Psychology of Money",
     "author": "Morgan Housel",
-    "description": "Timeless lessons on wealth, greed, and happiness.",
+    "description": "Timeless lessons on wealth, greed, and happiness. This book explains how human behavior influences financial decisions more than technical knowledge. Through engaging stories, it highlights the importance of patience, risk management, and long-term thinking when it comes to money and success.",
     "category": "tech",
     "available_quantity": 5,
     "image_url": "https://covers.openlibrary.org/b/title/The%20Psychology%20of%20Money-L.jpg"
   },
-    {
+  {
     "id": 7,
     "title": "Harry Potter and the Sorcerer's Stone",
     "author": "J.K. Rowling",
     "image_url": "https://i.ibb.co.com/989qMRW/42844155.jpg",
-    "description": "'The Great Gatsby' by F. Scott Fitzgerald is a timeless masterpiece that delves into the decadence and disillusionment of the Jazz Age. Set in the Roaring Twenties, the novel unveils the enigmatic Jay Gatsby's extravagant parties, masking a pursuit of lost love. Narrated by Nick Carraway, the story explores themes of wealth, love, and the American Dream, drawing readers into a vivid portrayal of the glittering yet elusive world of the East and West Egg. Fitzgerald's prose is both poetic and haunting, weaving a compelling narrative that transcends its era. A poignant exploration of societal excess and the human condition, 'The Great Gatsby' remains a literary gem that resonates across generations.",
+    "description": "A magical story about a young boy who discovers he is a wizard and begins his journey at Hogwarts School of Witchcraft and Wizardry. Along the way, he forms strong friendships, faces dangerous challenges, and uncovers secrets about his past. The book introduces a richly imagined world filled with magic, adventure, and wonder.",
     "category": "story",
     "available_quantity": 9
   },
@@ -67,7 +67,7 @@
     "title": "The Alchemist",
     "author": "Paulo Coelho",
     "image_url": "https://i.ibb.co.com/zS9jsdK/18144590.jpg",
-    "description": "'The Great Gatsby' by F. Scott Fitzgerald is a timeless masterpiece that delves into the decadence and disillusionment of the Jazz Age. Set in the Roaring Twenties, the novel unveils the enigmatic Jay Gatsby's extravagant parties, masking a pursuit of lost love. Narrated by Nick Carraway, the story explores themes of wealth, love, and the American Dream, drawing readers into a vivid portrayal of the glittering yet elusive world of the East and West Egg. Fitzgerald's prose is both poetic and haunting, weaving a compelling narrative that transcends its era. A poignant exploration of societal excess and the human condition, 'The Great Gatsby' remains a literary gem that resonates across generations.",
+    "description": "A philosophical story about a young shepherd named Santiago who embarks on a journey to discover his personal legend. Along the way, he learns about following dreams, listening to the heart, and recognizing opportunities. The book blends spirituality and adventure, encouraging readers to pursue their true purpose.",
     "available_quantity": 17,
     "category": "fiction"
   },
@@ -75,7 +75,7 @@
     "id": 9,
     "title": "A Brief History of Time",
     "author": "Stephen Hawking",
-    "description": "Understanding the universe and time.",
+    "description": "Understanding the universe and time. This book explores complex scientific concepts like black holes, space-time, and the origin of the universe in a simplified way. Stephen Hawking presents deep ideas about physics and cosmology, making them accessible to general readers while inspiring curiosity about the cosmos.",
     "category": "science",
     "available_quantity": 6,
     "image_url": "https://covers.openlibrary.org/b/title/A%20Brief%20History%20of%20Time-L.jpg"
@@ -84,17 +84,17 @@
     "id": 10,
     "title": "The Selfish Gene",
     "author": "Richard Dawkins",
-    "description": "A gene-centered view of evolution.",
+    "description": "A gene-centered view of evolution. This book explains how genes drive evolution and shape behavior. It challenges traditional views by focusing on survival and reproduction at the genetic level, offering a deeper understanding of biology and natural selection.",
     "category": "science",
     "available_quantity": 3,
     "image_url": "https://covers.openlibrary.org/b/title/The%20Selfish%20Gene-L.jpg"
   },
-   {
+  {
     "id": 11,
     "title": "The Girl on the Train",
     "author": "Paula Hawkins",
     "image_url": "https://i.ibb.co.com/P6hfCmJ/Whats-App-Image-2024-05-22-at-11-21-25-2e21ae46.jpg",
-    "description": "'The Great Gatsby' by F. Scott Fitzgerald is a timeless masterpiece that delves into the decadence and disillusionment of the Jazz Age. Set in the Roaring Twenties, the novel unveils the enigmatic Jay Gatsby's extravagant parties, masking a pursuit of lost love. Narrated by Nick Carraway, the story explores themes of wealth, love, and the American Dream, drawing readers into a vivid portrayal of the glittering yet elusive world of the East and West Egg. Fitzgerald's prose is both poetic and haunting, weaving a compelling narrative that transcends its era. A poignant exploration of societal excess and the human condition, 'The Great Gatsby' remains a literary gem that resonates across generations.",
+    "description": "A psychological thriller that follows a woman who becomes entangled in a missing person investigation. Through unreliable narration and shifting perspectives, the story builds suspense and mystery. It explores themes of memory, trust, and deception, keeping readers engaged until the final twist.",
     "available_quantity": 16,
     "rating": 4.2,
     "category": "mystery"
@@ -103,7 +103,7 @@
     "id": 12,
     "title": "Harry Potter and the Sorcerer's Stone",
     "author": "J.K. Rowling",
-    "description": "A young wizard’s magical journey begins.",
+    "description": "A young wizard’s magical journey begins as he enters a hidden world of spells, friendships, and challenges. At Hogwarts, Harry learns about courage, loyalty, and the power of love while facing dark forces. This story lays the foundation for an epic magical adventure.",
     "category": "story",
     "available_quantity": 15,
     "image_url": "https://covers.openlibrary.org/b/title/Harry%20Potter%20and%20the%20Sorcerer%27s%20Stone-L.jpg"
