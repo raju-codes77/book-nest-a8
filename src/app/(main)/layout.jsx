@@ -8,7 +8,7 @@ const layout = ({children}) => {
         <div>
             <Navabr></Navabr>
             {children}
-            
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

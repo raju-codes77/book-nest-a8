@@ -14,12 +14,18 @@ import { toast } from 'react-toastify';
 
 const LoginPage = () => {
 
+
+    const googleSignIn = async () => {
+        const data = await authClient.signIn.social({
+            provider: "google",
+        });
+    }
     const { register, handleSubmit } = useForm();
-    const handleLoginFunction =async (data) => {
+    const handleLoginFunction = async (data) => {
         const { name, photo, email, password } = (data)
 
         const { data: res, error } = await authClient.signIn.email({
-           
+
             email: email, // required
             password: password, // required
             callbackURL: "/"
@@ -51,7 +57,7 @@ const LoginPage = () => {
 
                         <div className="divider">OR</div>
 
-                        <button className='bg-white  py-2 w-full rounded-xl flex items-center gap-4 justify-center text-xl'><FcGoogle />Login With Google</button>
+                        <button onClick={() => googleSignIn()} className='bg-white active:scale-90 cursor-pointer hover:bg-gray-200 py-2 w-full rounded-xl flex items-center gap-4 justify-center text-xl'><FcGoogle />Login With Google</button>
 
                         <p className='text-center'>Don't have an account? <Link className='text-purple-500' href={"/register"}>Register</Link></p>
 

@@ -1,9 +1,21 @@
-import React from 'react';
+"use client"
+
+import React, { useState } from 'react';
 import { booksData } from './shared/data';
 import BooksCard from './BooksCard';
 
 const AllBooks = () => {
-    const books=booksData()
+    const books=booksData();
+
+    const [category,setCategory]=useState("All");
+    const [search,setSearch]=useState("");
+
+    const filteredBooks=book.filter(book=>{
+        const matchCategory= category === "All" || book.category===category;
+        const searchCategory=book.title.toLowerCase().includes(search.toLowerCase());
+
+        return matchCategory && searchCategory;
+    })
     return (
         <div className='w-3/4 mx-auto mb-10'>
             {/* search bar */}
@@ -21,7 +33,7 @@ const AllBooks = () => {
                             <path d="m21 21-4.3-4.3"></path>
                         </g>
                     </svg>
-                    <input type="search" required placeholder="Search" />
+                    <input onChange={(e)=>setSearch(e.target.value)} type="search" required placeholder="Search" />
                 </label>
 
                 <button className='btn btn-outline text-purple-400'>Search</button>
@@ -31,16 +43,16 @@ const AllBooks = () => {
                 <div className='col-span-4'>
                     <h2 className='font-bold'>Category</h2>
                     <div className='flex flex-col gap-2 w-3/4 mx-auto mt-2'>
-                        <button className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Tech</button>
-                        <button className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Story</button>
-                        <button className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Fiction</button>
-                        <button className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Science</button>
-                        <button className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Mystrey</button>
+                        <button onClick={()=>setCategory("tech")} className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Tech</button>
+                        <button onClick={()=>setCategory("story")} className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Story</button>
+                        <button onClick={()=>setCategory("fiction")} className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Fiction</button>
+                        <button onClick={()=>setCategory("science")} className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Science</button>
+                        <button onClick={()=>setCategory("mystery")} className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Mystrey</button>
                     </div>
                 </div>
                 <div className='col-span-8 grid  sm:grid-cols-2 md:grid-cols-2 gap-4'>
                     {
-                        books.map(book=><BooksCard key={book.id} book={book}></BooksCard>)
+                        filteredBooks.map(book=><BooksCard key={book.id} book={book}></BooksCard>)
                     }
                 </div>
 
