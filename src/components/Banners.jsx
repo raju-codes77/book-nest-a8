@@ -1,6 +1,7 @@
 import React from 'react';
 import banner from '@/assets/banner.png'
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Banners = () => {
     return (
@@ -8,7 +9,7 @@ const Banners = () => {
             <div className='px-10 space-y-2'>
                 <h2 className='text-4xl font-bold text-center'>Find Your Next Read</h2>
                 <p className='text-sm font-semibold text-center'>Explore thousands of books across <br /> stories,technology & science</p>
-                <p className='flex justify-center'><button className='btn btn-primary '>Browse Now</button></p>
+                <p className='flex justify-center'><Link href={"/books"} className='btn btn-primary '>Browse Now</Link></p>
             </div>
             <div>
                 <Image src={banner} height={600} width={600} alt='books' className='mx-auto'></Image>
