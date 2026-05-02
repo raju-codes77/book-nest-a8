@@ -43,6 +43,7 @@ const AllBooks = () => {
                 <div className='col-span-4'>
                     <h2 className='font-bold'>Category</h2>
                     <div className='flex flex-col gap-2 w-3/4 mx-auto mt-2'>
+                        <button onClick={()=>setCategory("All")} className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>All</button>
                         <button onClick={()=>setCategory("tech")} className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Tech</button>
                         <button onClick={()=>setCategory("story")} className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Story</button>
                         <button onClick={()=>setCategory("fiction")} className='bg-slate-200 p-3 font-semibold cursor-pointer rounded hover:text-white hover:bg-purple-300 transition active:scale-90'>Fiction</button>
