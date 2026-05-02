@@ -8,6 +8,12 @@ import React, { useEffect } from 'react';
 import { AiOutlineDatabase } from 'react-icons/ai';
 import { toast } from 'react-toastify';
 
+export const metadata = {
+  title: "Book Nest-Book details",
+  description: "Book Nest is a modern book borrowing platform where users can explore, borrow, and manage books easily",
+};
+
+
 const BookDetails = () => {
     const params = useParams();
     const { id } = params;
@@ -19,9 +25,13 @@ const BookDetails = () => {
 
     useEffect(() => {
         if (!user && !isPending) {
+              toast.error("You must be Login to see Book Details");
+              setTimeout(() => {
+                 router.push("/login");
+              }, 1000);
             
-            router.push("/login");
-            toast.error("You must be Login to see Book Details");
+           
+          
 
         }
     }, [user, isPending, router]);

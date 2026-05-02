@@ -8,6 +8,12 @@ import { useRouter } from 'next/navigation';
 import React, { useEffect } from 'react';
 import { toast } from 'react-toastify/unstyled';
 
+export const metadata = {
+  title: "Book Nest- Profile",
+  description: "Book Nest is a modern book borrowing platform where users can explore, borrow, and manage books easily",
+};
+
+
 const ProfilePage = () => {
     const { data: session, isPending } = authClient.useSession();
     const user = session?.user;
@@ -17,8 +23,12 @@ const ProfilePage = () => {
     useEffect(() => {
         if (!user && !isPending) {
             toast.error("You must be Login to see profile");
-            router.push("/login");
-
+            setTimeout(() => {
+                 router.push("/login");
+              }, 1000);
+            
+           
+          
         }
     }, [user, isPending, router]);
 
