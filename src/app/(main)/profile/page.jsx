@@ -23,7 +23,7 @@ const ProfilePage = () => {
     }, [user, isPending, router]);
 
     if (isPending) {
-        return <p>Loading...</p>
+        return <p className='flex justify-center'><span className="loading loading-ball loading-xl"></span></p>
     }
     if (!user) {
         return null;
@@ -41,7 +41,7 @@ const ProfilePage = () => {
                     <h2 className="card-title">Name: <span className='text-purple-700'>{user.name}</span></h2>
                     <p className='font-semibold'>Email: <span  className='text-purple-700'>{user.email}</span></p>
                     <div className="card-actions">
-                        <Link href={"/update"} className="btn btn-primary active:scale-90">Update Your Information </Link>
+                        <Link href={"/update"} className="btn btn-primary active:scale-90">Update Your Information</Link>
                     </div>
                 </div>
             </div>
