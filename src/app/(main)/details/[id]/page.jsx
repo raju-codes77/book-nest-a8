@@ -27,7 +27,7 @@ const BookDetails = () => {
     }, [user, isPending, router]);
 
     if (isPending) {
-        return <p>Loading...</p>
+        return <p className='flex justify-center'><span className="loading loading-bars loading-xl"></span></p>
     }
     if (!user) {
         return null;
@@ -42,10 +42,10 @@ const BookDetails = () => {
         <div className='w-3/4 mx-auto mt-6 mb-6'>
 
             <div className="md:card card-side bg-base-100 shadow-xl ">
-                <figure className='mb-3'>
+                <figure className='mb-3 md:w-1/2'>
                     <Image src={book.image_url} width={300} height={100} alt='book image' className='object-cover'></Image>
                 </figure>
-                <div className="sm:card-body">
+                <div className="sm:card-body md:w-1/2">
                     <h2 className="card-title text-3xl mt-2">{book.title}</h2>
                     <p> by <span className='text-purple-500 mb-2'>{book.author}</span></p>
                     <div>
