@@ -8,10 +8,6 @@ import React, { useEffect } from 'react';
 import { AiOutlineDatabase } from 'react-icons/ai';
 import { toast } from 'react-toastify';
 
-export const metadata = {
-  title: "Book Nest-Book details",
-  description: "Book Nest is a modern book borrowing platform where users can explore, borrow, and manage books easily",
-};
 
 
 const BookDetails = () => {

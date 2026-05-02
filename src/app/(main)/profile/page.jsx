@@ -6,12 +6,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import React, { useEffect } from 'react';
-import { toast } from 'react-toastify/unstyled';
+import { toast } from 'react-toastify';
 
-export const metadata = {
-  title: "Book Nest- Profile",
-  description: "Book Nest is a modern book borrowing platform where users can explore, borrow, and manage books easily",
-};
 
 
 const ProfilePage = () => {

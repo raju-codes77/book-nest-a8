@@ -9,10 +9,6 @@ import { useForm } from 'react-hook-form';
 import { authClient } from '@/lib/auth-client';
 import { toast } from 'react-toastify';
 
-export const metadata = {
-  title: "Book Nest-Login",
-  description: "Book Nest is a modern book borrowing platform where users can explore, borrow, and manage books easily",
-};
 
 
 const LoginPage = () => {

@@ -11,10 +11,6 @@ import { toast } from 'react-toastify';
 import { useRouter } from 'next/navigation';
 
 
-export const metadata = {
-  title: "Book Nest-Register",
-  description: "Book Nest is a modern book borrowing platform where users can explore, borrow, and manage books easily",
-};
 
 
 
