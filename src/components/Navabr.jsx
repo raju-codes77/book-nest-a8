@@ -8,6 +8,7 @@ import { MdMenuBook } from 'react-icons/md';
 import { usePathname } from 'next/navigation';
 import { authClient } from '@/lib/auth-client';
 import { CiLogout } from 'react-icons/ci';
+import 'animate.css';
 
 const Navabr = () => {
 
@@ -50,7 +51,7 @@ const Navabr = () => {
                 </div>
                 <div className="navbar-end">
                     {isPending? <span className="loading loading-dots loading-xl"></span>: user?<div className='md:flex gap-1 items-center'>
-                        <h2 className='font-semibold'>Hello,<span className='text-purple-800'>{user.name}</span> </h2>
+                        <h2 className='font-semibold'>Hello,<span className='text-purple-800 animate__bounce'>{user.name}</span> </h2>
                     <button onClick={async ()=>await authClient.signOut()} className="btn btn-outline border-red-500 text-red-500">Logout<CiLogout /></button>
                     </div>:
                     <Link className="btn btn-outline text-purple-500" href={"/login"}>LogIn</Link>}
